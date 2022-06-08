@@ -1,5 +1,5 @@
 FROM golang:1.10
-
+EXPOSE 80
 # Set the Current Working Directory inside the container
 WORKDIR ./
 
@@ -10,4 +10,3 @@ COPY . .
 RUN go run main.go
 
 # This container exposes port 8080 to the outside world
-EXPOSE 80
